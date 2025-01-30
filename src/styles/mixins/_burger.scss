@@ -56,7 +56,6 @@
 
 @mixin burger-css($color: #fff, $line-height: 2px, $rotate: 30deg) {
   position: relative;
-  // box-sizing: content-box;
   display: inline-block;
   height: 100%;
   width: 100%;

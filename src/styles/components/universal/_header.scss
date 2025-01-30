@@ -41,14 +41,7 @@
     &__list {
       display: flex;
       flex-wrap: wrap;
-      // TODO Проверить в старом Safari
-      gap: 15px 30px; // TODO %
-    }
-
-    &__item {
-      &:not(:last-child) {
-        // margin-right: 30px;
-      }
+      gap: 15px 30px;
     }
 
     &__link {
@@ -60,7 +53,6 @@
 
   &__space {
     flex: 0 1 38.2%;
-    // outline: 1px solid red;
 
     .burgers {
       display: none;
@@ -88,17 +80,6 @@
 
     &__nav {
       margin-right: 10px;
-    }
-
-    .nav {
-      &__list {
-        gap: 15px; // TODO %
-      }
-    }
-
-    &__space {
-      // flex: 0 0 25%; // TODO %
-      // outline: 1px solid red;
     }
   }
 }
@@ -140,7 +121,6 @@
 
       &__list {
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
       }
 
@@ -157,7 +137,6 @@
     }
 
     .burger {
-      // @include burger;
       @include burger-css($color_white, 2px, 45deg);
 
       &--close {

@@ -1,6 +1,5 @@
 .start {
   position: relative;
-  // padding-top: 200px; // TODO решить как узнать высоту хедера или убрать у него абсолют
   background-color: $color_bg-start;
   overflow: hidden;
 
@@ -81,7 +80,6 @@
     font-family: Arial, sans-serif;
     font-size: 1em;
     font-weight: 700;
-    // line-height: 150%;
     color: $color_text-dark;
     letter-spacing: 0.04em;
     text-transform: uppercase;
