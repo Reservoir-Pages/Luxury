@@ -1,0 +1,32 @@
+@font-face {
+	font-family: Arial;
+	font-display: swap;
+	src: url("../fonts/Arial-Bold.woff2") format("woff2"),
+	url("../fonts/Arial-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: Arial;
+	font-display: swap;
+	src: url("../fonts/Arial-Regular.woff2") format("woff2"),
+	url("../fonts/Arial-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Arial;
+	font-display: swap;
+	src: url("../fonts/Arial-RegularItalic.woff2") format("woff2"),
+	url("../fonts/Arial-RegularItalic.woff") format("woff");
+	font-style: italic;
+	font-weight: 400;
+}
+@font-face {
+	font-family: Prata;
+	font-display: swap;
+	src: url("../fonts/Prata-Regular.woff2") format("woff2"),
+	url("../fonts/Prata-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}

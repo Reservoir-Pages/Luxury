@@ -1,0 +1,168 @@
+.header {
+  flex: 1 1 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  min-width: 320px;
+  transition: background-color 0.3s ease;
+
+  &--dark {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+  }
+
+  &__container {
+    @include flex-v-center;
+    flex-wrap: nowrap;
+    min-height: 120px;
+  }
+
+  &__logo {
+    position: relative;
+    z-index: 5;
+    margin-right: 10px;
+    font-family: Prata, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+  }
+
+  &__nav {
+    flex: 1 1 auto;
+    margin-right: 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: center;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      // TODO Проверить в старом Safari
+      gap: 15px 30px; // TODO %
+    }
+
+    &__item {
+      &:not(:last-child) {
+        // margin-right: 30px;
+      }
+    }
+
+    &__link {
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__space {
+    flex: 0 1 38.2%;
+    // outline: 1px solid red;
+
+    .burgers {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1280px) {
+  .header {
+    &__space {
+      flex: 0 1 20%;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .header {
+    &__container {
+      min-height: 80px;
+    }
+
+    &__logo {
+      font-size: 30px;
+    }
+
+    &__nav {
+      margin-right: 10px;
+    }
+
+    .nav {
+      &__list {
+        gap: 15px; // TODO %
+      }
+    }
+
+    &__space {
+      // flex: 0 0 25%; // TODO %
+      // outline: 1px solid red;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    &:target {
+      .nav {
+        right: 0px;
+      }
+
+      .header__burger {
+        display: none;
+
+        &--close {
+          display: flex;
+        }
+      }
+    }
+
+    .container {
+      justify-content: space-between;
+    }
+
+    .nav {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      margin: 0;
+      padding-top: 180px;
+      padding-right: 15px;
+      padding-bottom: 30px;
+      padding-left: 15px;
+      height: 100%;
+      width: 100%;
+      background-color: $color_bg;
+      overflow: auto;
+      transition: all 0.3s ease;
+
+      &__list {
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+      }
+
+      &__link {
+        font-size: 20px;
+      }
+    }
+
+    .burgers {
+      display: block;
+      margin-left: auto;
+      height: 18px;
+      width: 30px;
+    }
+
+    .burger {
+      // @include burger;
+      @include burger-css($color_white, 2px, 45deg);
+
+      &--close {
+        display: none;
+      }
+    }
+  }
+}

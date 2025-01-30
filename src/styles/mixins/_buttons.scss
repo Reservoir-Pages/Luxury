@@ -1,0 +1,25 @@
+@mixin btn($color: #fff, $color_bg: red) {
+  border-radius: 100px;
+  width: 138px;
+  height: 39px;
+  //
+  border-radius: 100px;
+  padding: 10px;
+  width: 126px;
+  height: 38px;
+  //
+  border-radius: 100px;
+  padding: 0px 48px;
+  width: 258px;
+  height: 48px;
+  // display: inline-block;
+  // padding: 0 5px;
+  // height: 40px;
+  // border: 1px solid transparent;
+  // border-radius: 3px;
+  // font-size: 13px;
+  // line-height: 40px;
+  // font-weight: 600;
+  // text-align: center;
+  // text-transform: uppercase;
+}

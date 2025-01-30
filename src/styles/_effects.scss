@@ -1,0 +1,27 @@
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid $color_black;
+  outline-offset: 3px;
+}
+
+// TODO Провверить что с кнопками и что с any-hover
+@media (any-hover: hover) {
+  a,
+  button {
+    // TODO Разобраться с 0s
+    // transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+a:active,
+button:active {
+  opacity: 0.2;
+}
