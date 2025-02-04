@@ -95,7 +95,7 @@
     flex: 1 1 40%;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    background-image: url("@images/form-bg-1.jpg");
+    background-image: url("@images/form-bg.png");
     background-repeat: no-repeat;
     background-position: center right;
     background-size: cover;
@@ -110,8 +110,9 @@
 
       img {
         position: absolute;
-        right: 0;
+        right: 4.5vw;
         bottom: 0;
+        transform: translateY(17%);
       }
     }
   }
